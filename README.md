@@ -38,3 +38,5 @@ dotnet run --project fluentblazorwasm --pathbase=/fluentblazorwasm # 경로문�
     - 일부 css 경로가 루트`/_content` 혹은 `../_content` 기준으로 되있음.
 - 왜 이난리가 나있는지 모르겠음. 선언,디버그,배포 다 맛탱이가 가게됨.
 - BlazorWasm 웹앱을 자유로운 경로에 삽입하는 모듈로써 활용하려면 대체 어디서부터 건드려야 할지, 아무것도 정리가 안되있어보임.
+
+https://brownbot.com/2021/10/18/locally-host-blazor-wasm-in-a-subsite-base-href/
