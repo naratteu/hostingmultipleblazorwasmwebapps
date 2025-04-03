@@ -22,6 +22,12 @@ dotnet run --project blazorwasm --pathbase=/blazorwasm
 dotnet run --project fluentblazorwasm --pathbase=/fluentblazorwasm # 경로문제 발생함.
 ```
 
+```diff
++  <PropertyGroup Condition="'$(Configuration)'=='Release'">
++    <StaticWebAssetBasePath>/fluentblazorwasm/</StaticWebAssetBasePath>
++  </PropertyGroup>
+```
+
 ## Analyze
 
 - `<StaticWebAssetBasePath>` 를 지정하면 웹앱 진입점및 어셋들의 경로는 바뀌나, 참조할 `_content` 폴더만 루트에 모임
